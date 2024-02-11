@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active {
+  color: yellow !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-pics {
+  position: relative;
+  height: 650px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-pics img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-btn {
+  position: absolute;
+  top: 93%;
+  left: 48%;
+}
+
+.home-btn button {
+  padding: 2px 15px;
+  margin: 0px 5px;
+  font-size: 18px;
+  border-radius: 25%;
+  border: none;
+}
+
+.home-heading {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+}
+
+.home-heading h1 {
+  font-size: 28px;
+  width: 300px;
+}
+
+.home-heading p {
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+.tags {
+  padding: 40px 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tags > div {
+  padding: 25px;
+  background: black;
   color: white;
+  font-size: 18px;
+  margin: 15px 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.tags > div:hover {
+  scale: 1.05;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .popular-products h1{
+  margin: auto;
+  border: 2px solid red;
+  width: fit-content;
+  
+} */
